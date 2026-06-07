@@ -10,17 +10,52 @@
         background: #0f0f1a;
         color: #e2e8f0;
         text-align: center;
-        padding: 80px 20px;
+        margin: 0;
+        padding: 0;
       }
 
-      h1 { font-size: 2.5rem; color: #7c6af7; margin-bottom: 12px; }
-      p  { font-size: 1.1rem; color: #94a3b8; margin-bottom: 32px; }
+            /* ── Navbar ── */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100;
+        background: #FFF6E5;
+        color : #fff6e5;
+        padding: 20px 40px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6); 
+        box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+      }
 
-      a {
-        background: #7c6af7;
-        color: white;
-        padding: 12px 28px;
-        border-radius: 30px;
+      .logo {
+        font-size: 1.4rem;
+        font-weight: 800;
+        color: #5B4636;
+        letter-spacing: 3px;
+        text-decoration: none;
+      }
+
+      .nav-right {
+        font-size: 0.9rem;
+        color: #5B4636;
+      }
+
+      .nav-right span {
+        color: #ffffff;
+        font-weight: 700;
+      }
+
+      .nav-features {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+      }
+
+      .nav-features a{
+        background: none;
+        padding: 0;
+        border-radius: 0;
+        color: #5B4636;
         text-decoration: none;
         font-weight: 600;
       }
@@ -29,10 +64,29 @@
     </style>
   </head>
   <body>
+    <nav>
+    <a href="#" class="logo">HEALER</a>
 
-    <h1>Welcome to <%= title %> 🌱</h1>
-    <p> <%= tagline %></p>
-    <a href="/register">Get Started</a>
+    <a href="#" class="nav-right">
+      Home
+    </a>
+        <a href="#" class="nav-right">
+      Features
+    </a>
+        <a href="#" class="nav-right">
+      About Us
+    </a>
+        <a href="#" class="nav-right">
+      Contact
+    </a>
+        <a href="#" class="nav-right">
+      Feedback
+    </a>
+  </nav>
+
+    <h1>YOUR HEALING JOURNEY STARTS HERE</h1>
+    <h2>IT’S OK TO FEEL BROKEN WHAT MATTERS IS HOW YOU REBUILD</h2>
+    <p> “Turn your healing into progress. Complete simple daily tasks to gain experience, level up your character, and slowly rebuild yourself after heartbreak. Share your thoughts and stories in a supportive community, where others understand what you’re going through. If you need deeper support, access guided therapy tools designed to help you reflect, cope, and grow stronger—one step at a time.”</p>
 
   </body>
 </html>
